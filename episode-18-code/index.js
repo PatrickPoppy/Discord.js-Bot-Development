@@ -10,7 +10,7 @@ let purple = botconfig.purple;
 let cooldown = new Set();
 let cdseconds = 5;
 
-fs.readdir("./commands/", (err, files) => {
+fs.readdir("./cmd/", (err, files) => {
 
   if(err) console.log(err);
   let jsfile = files.filter(f => f.split(".").pop() === "js");
